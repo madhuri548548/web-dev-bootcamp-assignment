@@ -1,0 +1,20 @@
+<!-- text should display in black color, but when button
+     is pressed the texy should display in red color -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Button Demo </title>
+		<script>
+			// function definition
+			function changeColor() {
+				document.getElementById("abcd").style.color="red";
+			}
+		</script>
+	</head>
+	<body>
+		<p id="abcd">madBlocks MTA Web Dev Bootcamp</p>
+		<button type="button" onclick="changeColor()">
+		Click to Change</button>
+	</body>
+</html>
