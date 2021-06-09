@@ -1,16 +1,15 @@
-<!--Create a button, when you click on the button some portion of the paragraph should be updated-->
-<!DOCTYPE html>
+<!--Use script inside the body tag to display the date time on html page-->
+<!Doctype html>
 <html>
-<head>
-    <title>span demo</title>
-</head>
-<body>
-    <h2>update paragraph<h2>
-    <p >
-        <span id="1" style="background-color: orange;">HTML,CSS</span>
-    </p>
-    <button type="button" onclick="document.getElementById('1').innerHTML='HIPER TEXT MARKUP LANGUAGE AND CASCADING STYLE SHEETS'">UPDATE TEXT</button>
-        
-
-</body>
+   <head>
+        <meta charset="utf-8"/>
+        <title>date time</title>
+   </head>
+   <body>
+      <p id="datetime"></p>
+      <script >
+          var d=new date();
+          document.getElementById("datetime").innerHTML="today'sdateis"+d
+      </script>
+   </body>
 </html>

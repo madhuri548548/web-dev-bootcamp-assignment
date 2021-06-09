@@ -1,65 +1,18 @@
-<!-- Create 3 divisions side by side with division1 in green background, division2 in the gray background, division3 in green background-->
-<!DOCTYPE html>
+<!-- check whether script tags are been called by your browser or not using no script tags and display your name using the script on HTML body-->
+
+<!DOCTYPE>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title> Div demo</title>
-    <style>
-        .leftdiv{
-            color:white;
-            background-color: green;
-            float: left;
-            font-size: 20px;
-        }
-        .middlediv{
-            color:black ;
-            font-size: 20px;
-            background-color:gray ;
-            float: left;
-
-        }
-        .rightdiv{
-            font-size: 20px;
-            color: white;
-            background-color:green ;
-            float: left;
-        }
-        div{
-            padding: 2%;
-            color: white;
-            background-color: green;
-            width: 22%;
-            border:solid black;
-            font-style: normal;
-            font-size: 30;
-            text-align: justify;
-        }
-        h1,h2,h3{
-            font-size: 40;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="leftdiv">
-        <h1>paragraph 1</h1>
-        <p>
-        Introduction to HTML Complete Beginner to Expert Course is perfect for anyone who wants to learn HTML or learn more about HTML.  HTML provides the structure for EVERY WEBSITE and its the foundation for everything you see on the web.  Browsers read HTML and render it out for web users.  If you are looking for a starting point to create digital content this course is for you!!!!
-        </p>
-    </div>
-    <div class="middlediv">
-    <h2>paragraph 2</h2>
-        <p>
-        In this course you will learn everything you need to know about HTML, and HTML5.  It’s packed full of challenges and exercises to get you writing HTML quickly.  As you follow the lessons source code is also included to get you started quickly and easily.  The course will provide you everything you need to get started with HTML and challenge you to learn HTML.
-        </p>
-    </div>
-    <div class="rightdiv">
-    <h3>paragraph 3<h3>
-        <p>
-          Core focus of this course is just HTML, learn to code HTML in just a few hours.  You will be amazed at how easily you will be able to write your own HTML.
-          
-          Straight to the point lessons with no wasted time, watch and learn.  Then practice what you learned to effectively learn HTML.  Hands on practice with a fast paced easy to follow lesson plan. 
-        </p>
-    </div>
-</body>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<!--  display name from script to the HTML Code -->
+		<script>
+              document.write("madhu parvathaneni");
+		</script>
+		<!-- If script tag doesn't work, noscript tag will work -->
+		<noscript>
+			script doesnt work
+		</noscript>
+	</body>
 </html>
