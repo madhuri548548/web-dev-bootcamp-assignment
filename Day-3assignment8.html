@@ -1,0 +1,27 @@
+<!--create an input that reads from the data list through select tag and display the selected data in the paragraph tag of html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<label>choose your favorite food</label>
+	<select id='clr'>
+		<option>chicken</option>
+		<option>pizza</option>
+		<option>noodles</option>
+		<option>burger</option>
+		<option>french fries</option>
+	</select>
+	<button onclick="readData()">submit</button>
+	<p id="result"></p>
+	<script>
+		function readData() {
+			var c=document.getElementById('clr').value;
+			document.getElementById('result').innerHTML="your favotite  food is "+c+"!";
+		}
+	</script>
+
+</body>
+</html>

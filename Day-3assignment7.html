@@ -1,0 +1,54 @@
+<!--Assignment - 7: Create an input that reads from radio, checkbox which displays the selected data in separate paragraphs-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio &checkbox</title>
+</head>
+<body>
+	<form>
+	<h3>Select your gender</h3>
+		<input type="radio" id="male" name="gender" value="male"/>Male<br>
+		<input type="radio" id="female" name="gender" value="female">Female<br><br>
+
+	<h3>your favourite sport:</h3>
+		<input type="checkbox" id="cricket" value="cricket"/>cricket
+		<input type="checkbox" id="football" value="football"/>football
+	</form><br><br>
+	<button onclick="readData()">submit</button>
+	<p id="gen"></p>
+	<p id="pla"></p>
+
+	<script>
+	function readData() {
+		var cricket=document.getElementById('cricket');
+		var football=document.getElementById('football');
+		var res;
+		if(document.getElementById('male').checked==true){
+			document.getElementById('gen').innerHTML="male";
+		}
+		else{
+			if(document.getElementById('female').checked==true){
+				document.getElementById('gen').innerHTML="female";
+			}
+		}
+
+		console.log(cricket.checked,football.checked);
+		if(cricket.checked==true &&football.checked==true){
+			res='cricket football';
+		}
+		else if(cricket.checked==false && football.checked==true){
+			res='football only';
+
+		}
+		else if(cricket.checked==true && football.checked==false){
+			res='cricket only';
+		}
+		else{
+			res='none';
+		}
+		document.getElementById('pla').innerHTML=res;
+
+	}
+</script>
+</body>
+</html
