@@ -1,0 +1,34 @@
+<!--Display paragraph only when div tag is hovered using pseudo class in the html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>Hovered using pseudo code</title>
+	<style>
+		#abc{
+			color: blue;
+			background-color: lightblue;
+			text-align: justify;
+			border: 2px solid red;
+			padding: 20px;
+			font-style: oblique;
+			font-size: 20px;
+		}
+		div:hover p{
+			display: block;
+		}
+		p{
+			display: none;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Hovered using div tag</h1>
+	<div>Hover over me to see the paragraph 
+	<p id="abc">
+		<span style="font-size: 100px;">&#128587</span><br>Hellooooo...<br><span style="font-size: 100px;">&#128578</span> <br>Hava a good day...<br><span style="font-size: 100px;">&#128591</span><br>Thank you for hover on me... 
+	</p>
+	</div>
+</body>
+</html>

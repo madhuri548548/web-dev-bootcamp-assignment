@@ -1,0 +1,25 @@
+<!--Create paragraphs in the div tag and demostrate general sibiling css selector,highlight the paragraph respectively-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General sibiling seclector</title>
+	<style >
+		div ~ p{
+			color: red;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1>General sibiling seclector</h1>
+		<p>This is paragraph 1 before div tag</p>
+		<div>
+			<p>This is paragraph 2 in div tag</p>
+		</div>
+		<p>This is paragraph 3 after div tag</p>
+		<code>
+			<h3>hello world in code tag</h3>
+		</code>
+		<p>This is paragraph 4 after code tag</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!--Create paragraphs in div tag and demostrate adjacent siblings css selector,highlight the paragraphs respectively-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adjacent sibiling selector</title>
+	<style>
+		div + p{
+			color: pink;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Adjacent sibiling selector</h1>
+	<p>This is paragraph 1 before div tag</p>
+	<div>
+		<p>This is paragraph 2 in div tag 1</p>
+	</div>
+	<p>This is paragraph 3 between two div tag 1 and 2</p>
+	<div>
+		<p>This is paragraph 4  in div tag 2</p>
+	</div>
+	<p>This is paragraph 5 between two div tag 2 and 3</p>
+	<div>
+		<p>This is paragraph 6 in div tag 3</p>
+	</div>
+</body>
+</html>

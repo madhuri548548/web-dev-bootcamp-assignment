@@ -1,0 +1,25 @@
+<!--Create paragraphs in the div tag and demostrate child css selector,highlight the paragraphs respectively-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>child selector</title>
+	<style>
+		div > p{
+			background-color: red;
+			color: darkred;
+		}
+	</style>
+</head>
+<body>
+		<h1>child selector </h1>
+		<p>This is paragraph 1 </p>
+		<div>
+			<p>This is paragraph 2 in div tag</p>
+			<section>
+				<p>This is paragraph 3 in section tag which is child of  div tag</p>
+			</section>
+			<p>This is paragraph 4 in div tag</p>
+		</div>
+		<p>This is paragraph 5 out of div tag</p>
+</body>
+</html>
